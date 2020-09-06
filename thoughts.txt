@@ -1,0 +1,20 @@
+Design layout - 
+
+Main manager will control all info
+Draw module will add elements to the DOM
+    Draw should only be affected by changes in Main module
+
+Main module will be looking at Project level
+Project module will be looking at todo level
+
+module for todos and module for projects
+    factory functions handle the creation of each
+    Modules manage them
+
+TodoManager needs a specific project to call it
+    will control all of the todos for a project
+
+ProjectManager module will control creation and deletion and edit of projects
+
+
+

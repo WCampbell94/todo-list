@@ -1,11 +1,16 @@
 import './style.css';
+import Manager from './Manager';
+import Display from './Display';
 
 function component() {
-	const element = document.createElement('div');
+	let test = Manager.projects;
 
-	element.innerText = 'Hello world';
-
-	return element;
+	test.forEach((tests) => {
+		Display.createComponent(tests);
+	});
 }
 
-document.body.appendChild(component());
+component();
+// window.addEventListener('click', (e) => {
+// 	document.body.appendChild(component());
+// });
